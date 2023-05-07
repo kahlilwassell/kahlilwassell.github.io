@@ -1,0 +1,38 @@
+/* navbar styling */
+.navbar a {
+    color:#F3EFF5;
+}
+.navbar a:hover {
+    background-color: #A99F96;
+    color:#04070A;
+}
+.navbar a.selected {
+    background-color: #123A68;
+}
+/* intro styling */
+#intro {
+    background-image: url('images/_MG_3646.JPG');
+    font-family: 'Montserrat', sans-serif;
+    background-size: cover;
+    overflow: auto;
+    border: solid 5px #d02525;
+    height: 850px
+}
+#mainintro {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    text-align:right;
+    color:#F3EFF5;
+    font-size: 50px;
+    margin: 70px 100px auto;
+}
+#subintro {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    text-align:right;
+    color:#F3EFF5;
+    font-size: 20px;
+    margin: 10px 100px auto;
+}
