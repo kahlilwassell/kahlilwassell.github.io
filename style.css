@@ -1,6 +1,6 @@
 /* navbar styling */
 .navbar a {
-    color:#F3EFF5;
+    color: #F3EFF5;
 }
 .navbar a:hover {
     background-color: #A99F96;
@@ -10,28 +10,45 @@
     background-color: #123A68;
 }
 /* intro styling */
-#intro {
+.intro {
     background-image: url('./images/IMG3646.JPG');
-    font-family: 'Montserrat', sans-serif;
     background-size: cover;
     overflow: auto;
-    height: 850px
-}
-#mainintro {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: right;
     justify-content: right;
     text-align:right;
-    color:#F3EFF5;
-    font-size: 50px;
+    color: #F3EFF5;
+    font-size: 20px;
     margin: 70px 100px auto;
 }
-#subintro {
-    display: flex;
-    align-items: right;
-    justify-content: right;
-    text-align:right;
-    color:#F3EFF5;
+#mainIntro {
+    font-size: 50px;
+}
+#subIntro {
     font-size: 20px;
-    margin: 10px 100px auto;
+}
+#description {
+    font-size: 15px;
+    max-width: 350px;
+    position: relative;
+    left: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.aboutMe {
+    background-color: #123A68;
+    color: #A99F96;
+    display: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.redOutline {
+    border-width:3px; 
+    border-style:solid;
+    border-color:#FF0000; 
 }
