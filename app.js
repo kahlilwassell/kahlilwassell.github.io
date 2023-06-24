@@ -9,6 +9,6 @@ const dropdownButtons = document.querySelectorAll(".nav-item")
 
 dropdownButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-        console.log(btn)
+        console.log(btn);
     });
 });
