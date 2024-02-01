@@ -19,9 +19,9 @@ dropdownButtons.forEach((btn) => {
 });
 
 document.getElementById('skillsButton').addEventListener('click', function() {
-    window.location.href = 'skills.html';
+    window.location.href = '#skills';
 });
 
 document.getElementById('workButton').addEventListener('click', function() {
-    window.location.href = 'work.html';
+    window.location.href = '#work';
 });

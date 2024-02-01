@@ -52,3 +52,20 @@
     border-style:solid;
     border-color:#FF0000; 
 }
+
+.intro-text {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding for spacing */
+    margin-top: 50px; /* Additional space from the top if needed */
+  }
+  
+  #mainIntro, #subIntro, #description {
+    margin-bottom: 1rem; /* Space between paragraphs */
+  }
+  
+  @media (min-width: 768px) { /* For larger devices */
+    .intro-text {
+      max-width: 650px; /* Set a max-width if you want to constrain the text block */
+      margin: auto; /* Center the text block */
+    }
+  }
