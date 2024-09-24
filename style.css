@@ -24,6 +24,22 @@
     font-size: 20px;
     margin: 70px 100px auto;
 }
+
+.intro2 {
+    background-image: url('./images/IMG_2308.jpeg');
+    background-size: cover;
+    overflow: auto;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    text-align:right;
+    color: #28242a;
+    background-color: #F3EFF5;
+    font-size: 20px;
+    margin: 70px 100px auto;
+}
 #mainIntro {
     font-size: 50px;
 }
