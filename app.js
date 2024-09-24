@@ -25,3 +25,11 @@ document.getElementById('skillsButton').addEventListener('click', function() {
 document.getElementById('workButton').addEventListener('click', function() {
     window.location.href = '#work';
 });
+
+document.getElementById('contactButton').addEventListener('click', function() {
+    window.location.href = '#contact';
+});
+
+document.getElementById('blogButton').addEventListener('click', function() {
+    window.location.href = '#blog';
+});
