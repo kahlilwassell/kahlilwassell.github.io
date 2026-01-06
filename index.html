@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -19,16 +18,16 @@
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
     />
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images/kwlogo.png" type="image/png" />
     <title>Kahlil Portfolio</title>
   </head>
-  <body class="intro">
+  <body>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
       <a class="navbar-brand" href="index.html">Kahlil Wassell</a>
       <button
         class="navbar-toggler"
@@ -57,28 +56,74 @@
       </div>
     </nav>
     <!-- Intro Text -->
-    <div>
-      <p id="mainIntro">
-        Hello, I am
-        <br />
-        Kahlil Wassell
-      </p>
-      <p id="subIntro">
-        Full-Stack Software Engineer
-        <br />
-        Math & Science Enthusiast
-      </p>
-      <p id="description">
-        I was born and raised in Springfield Illinois and earned my Bachelors of
-        Science in Mechanical Engineering from Harvard College in 2021.
-        <br />
-        I have a passion for various branches of science ranging from particle
-        physics to engineering and astronomy to computer science.
-        <br />
-        I desire to use software to solve complex analytical problems, to help
-        us better understand the Universe and our place in it.
-      </p>
-    </div>
+    <main class="page">
+      <section class="hero reveal">
+        <div>
+          <p class="tag">Full-Stack Software Engineer</p>
+          <h1>Hello, I am Kahlil Wassell.</h1>
+          <p class="subtitle">Math &amp; science enthusiast, systems builder, and problem solver.</p>
+          <p>
+            I was born and raised in Springfield, Illinois and earned my B.S. in
+            Mechanical Engineering from Harvard College in 2021. I build software
+            that helps teams make confident, data-informed decisions while keeping
+            a deep curiosity for physics, astronomy, and engineering.
+          </p>
+          <div class="cta-row">
+            <a class="btn-primary" href="work.html">View My Work</a>
+            <a class="btn-outline" href="contact.html">Get In Touch</a>
+            <a class="btn-outline" href="Kahlil_Wassell_Software_Engineer.pdf">Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-media hero-media--home" role="img" aria-label="Kahlil Wassell portrait"></div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Highlights</h2>
+        <p class="section-lead">
+          From distributed systems to research labs, I care about building tools
+          that simplify complex workflows and bring clarity to technical decisions.
+        </p>
+        <div class="card-grid">
+          <article class="card">
+            <p class="tag">Engineering</p>
+            <h3>Systems that scale</h3>
+            <p>
+              I design resilient APIs and event-driven pipelines to keep data
+              flowing accurately across teams.
+            </p>
+          </article>
+          <article class="card">
+            <p class="tag">Product</p>
+            <h3>Human-centered tooling</h3>
+            <p>
+              My favorite projects are the ones that replace messy manual work
+              with focused, thoughtful interfaces.
+            </p>
+          </article>
+          <article class="card">
+            <p class="tag">Curiosity</p>
+            <h3>Science-inspired mindset</h3>
+            <p>
+              I bring a researcher's curiosity to every product decision, grounded
+              in experimentation and precision.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Now</h2>
+        <p class="section-lead">
+          I am focused on distributed systems, knowledge tools, and building
+          intelligent workflows for publishing and content teams. I am also open
+          to collaborations in science education and data visualization.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <p>Connect on <a href="https://www.linkedin.com/in/kahlil-wassell-563963148">LinkedIn</a> or reach out via the contact page.</p>
+      </footer>
+    </main>
 
     <!-- Optional JavaScript -->
     <script src="app.js"></script>

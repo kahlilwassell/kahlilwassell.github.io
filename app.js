@@ -1,35 +1,33 @@
-// This is the script that will dynamically change the site
-const dropdownButtons = document.querySelectorAll(".nav-item");
+// Highlight the active nav link and reveal sections on scroll.
+const navLinks = document.querySelectorAll(".nav-item");
+let currentPath = window.location.pathname.split("/").pop();
+if (!currentPath) {
+  currentPath = "index.html";
+}
 
-const setSelectedDropdown = (option) => {
-    // Clear the selected state from all buttons
-    dropdownButtons.forEach(button => {
-        button.classList.remove('selected'); // Assuming 'selected' is the class for selected state
-    });
-
-    // Add the selected state to the clicked button
-    option.currentTarget.classList.add('selected');
-};
-
-// Event listener
-dropdownButtons.forEach((btn) => {
-    btn.addEventListener("click", (event) => {
-        setSelectedDropdown(event);
-    });
+navLinks.forEach((link) => {
+  const target = link.getAttribute("href");
+  if (target === currentPath) {
+    link.classList.add("selected");
+  }
 });
 
-document.getElementById('skillsButton').addEventListener('click', function() {
-    window.location.href = '#skills';
-});
+const revealElements = document.querySelectorAll(".reveal");
 
-document.getElementById('workButton').addEventListener('click', function() {
-    window.location.href = '#work';
-});
+if (revealElements.length > 0 && "IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries, activeObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          activeObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
 
-document.getElementById('contactButton').addEventListener('click', function() {
-    window.location.href = '#contact';
-});
-
-document.getElementById('blogButton').addEventListener('click', function() {
-    window.location.href = '#blog';
-});
+  revealElements.forEach((el) => observer.observe(el));
+} else {
+  revealElements.forEach((el) => el.classList.add("in-view"));
+}

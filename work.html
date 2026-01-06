@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -19,19 +18,19 @@
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Montserrat"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@400;500;600&display=swap"
     />
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images/kwlogo.png" type="image/png" />
     <title>Kahlil's Work</title>
   </head>
-  <body class="intro2">
+  <body>
     <header>
       <!-- Your header content here -->
     </header>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
       <a class="navbar-brand" href="index.html">Kahlil Wassell</a>
       <button
         class="navbar-toggler"
@@ -59,74 +58,161 @@
         </div>
       </div>
     </nav>
-    <section>
-      <h1>Work Experience</h1>
-      <h2>Software Engineer II at McMaster-Carr</h2>
-      <p>(Mar 2023 - Present)</p>
-      <ul>
-        <li>
-          Designed and implemented MongoDB Cache storing all published product
-          data, including schema design and creation of REST API Endpoints,
-          integrated with Apache Kafka to sync distributed apps for real-time
-          updates.
-        </li>
-        <li>
-          Introduced Apache Kafka to McMaster’s toolkit, enabling live updates
-          for publishing workflows, reducing turnaround times for content
-          changes from days to seconds.
-        </li>
-        <li>
-          Created a wrapper for Apache Kafka and established department-wide
-          standards for engineers incorporating it into future applications.
-        </li>
-      </ul>
+    <main class="page">
+      <section class="hero reveal">
+        <div>
+          <p class="tag">Experience</p>
+          <h1>Work &amp; Research</h1>
+          <p class="subtitle">Building software that removes friction and adds clarity.</p>
+          <p>
+            I specialize in backend systems, product tooling, and scientific
+            research workflows. Below are selected roles and projects.
+          </p>
+        </div>
+        <div class="hero-media hero-media--alt" role="img" aria-label="Kahlil Wassell at work"></div>
+      </section>
 
-      <h2>Software Engineer I at McMaster-Carr</h2>
-      <p>(Sep 2021 - Mar 2023)</p>
-      <ul>
-        <li>
-          Developed and maintained endpoints and executables utilizing RESTful
-          API and microservices architecture for efficient search data
-          management with C#, JavaScript, React, MongoDB, and Git workflows.
-        </li>
-        <li>
-          Built a web application that moved the publishing department from
-          managing data across 50,000 spreadsheets to a single app,
-          revolutionizing the data structure to a semantic model, enabling more
-          customer-focused decisions.
-        </li>
-      </ul>
+      <section class="section reveal">
+        <h2>Professional Experience</h2>
+        <div class="timeline">
+          <article class="card timeline-item">
+            <p class="tag">Mar 2023 - Present</p>
+            <h3>Software Engineer II — McMaster-Carr</h3>
+            <ul>
+              <li>
+                Designed and implemented MongoDB cache storing published product data,
+                including schema design and REST API endpoints with Apache Kafka for
+                real-time updates.
+              </li>
+              <li>
+                Introduced Apache Kafka to the team, reducing publishing turnaround
+                from days to seconds.
+              </li>
+              <li>
+                Created a wrapper and standards for Kafka adoption across the
+                department.
+              </li>
+            </ul>
+          </article>
 
-      <h2>Project/Academic/Research Experience</h2>
-      <h3>Senior Design Capstone Thesis</h3>
-      <p>(Aug 2020 – May 2021)</p>
-      <ul>
-        <li>
-          Participated in the Wyss Lab, contributing to the design and testing
-          of an actuated tail for the quadrupedal microrobot HAMR.
-        </li>
-        <li>
-          Created state space models in MATLAB to simulate the behavior of
-          appendages and their impact on HAMR’s gait across uneven terrain.
-        </li>
-      </ul>
+          <article class="card timeline-item">
+            <p class="tag">Sep 2021 - Mar 2023</p>
+            <h3>Software Engineer I — McMaster-Carr</h3>
+            <ul>
+              <li>
+                Built endpoints and executables using RESTful API and microservices
+                architecture for search data management with C#, React, and MongoDB.
+              </li>
+              <li>
+                Developed a web application that consolidated 50,000 spreadsheets
+                into a single semantic data model.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-      <h3>C.E.R.N ATLAS Experiment</h3>
-      <p>(Jun 2019 – Aug 2019)</p>
-      <ul>
-        <li>
-          Contributed to the Harvard ATLAS team in improving elementary particle
-          detection methods at the Large Hadron Collider.
-        </li>
-        <li>
-          Designed simulations using Python and ROOT to predict the behavior of
-          detectors for the New Small Wheel, which went live in July 2022,
-          enhancing muon tracking precision.
-        </li>
-      </ul>
-    </section>
-    <footer>
-      <!-- Your footer content here -->
-    </footer>
+      <section class="section reveal">
+        <h2>Research &amp; Academic Projects</h2>
+        <div class="timeline">
+          <article class="card timeline-item">
+            <p class="tag">Aug 2020 – May 2021</p>
+            <h3>Senior Design Capstone — Wyss Lab</h3>
+            <ul>
+              <li>
+                Designed and tested an actuated tail for the quadrupedal
+                microrobot HAMR.
+              </li>
+              <li>
+                Built state space models in MATLAB to simulate gait behavior on
+                uneven terrain.
+              </li>
+            </ul>
+          </article>
+          <article class="card timeline-item">
+            <p class="tag">Jun 2019 – Aug 2019</p>
+            <h3>C.E.R.N ATLAS Experiment — Harvard ATLAS Team</h3>
+            <ul>
+              <li>
+                Improved elementary particle detection methods at the Large
+                Hadron Collider.
+              </li>
+              <li>
+                Designed simulations using Python and ROOT to predict detector
+                performance for the New Small Wheel.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <h2>Resume Highlights</h2>
+        <div class="card-grid">
+          <article class="card resume-highlight">
+            <p class="tag">Impact</p>
+            <p>
+              Delivered platform improvements that accelerated publishing cycles
+              and modernized legacy workflows.
+            </p>
+          </article>
+          <article class="card resume-highlight">
+            <p class="tag">Systems</p>
+            <p>
+              Experienced with distributed messaging, API design, and data modeling.
+            </p>
+          </article>
+          <article class="card resume-highlight">
+            <p class="tag">Research</p>
+            <p>
+              Applied simulation, modeling, and experimentation in academic labs.
+            </p>
+          </article>
+        </div>
+        <p class="section-lead">
+          Share your latest resume and I will weave in precise details here.
+        </p>
+      </section>
+
+      <section class="section reveal">
+        <h2>Resume</h2>
+        <p class="section-lead">
+          Download the PDF or view it directly below.
+        </p>
+        <div class="resume-actions">
+          <a class="btn-primary" href="Kahlil_Wassell_Software_Engineer.pdf">Download Resume</a>
+          <a class="btn-outline" href="Kahlil_Resume.pdf">Alternate Version</a>
+        </div>
+        <div class="resume-embed" style="margin-top: 24px;">
+          <object data="Kahlil_Wassell_Software_Engineer.pdf" type="application/pdf">
+            <p>
+              Your browser does not support PDF viewing. Download the resume
+              instead.
+            </p>
+          </object>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Looking for a specific format? Let me know and I will share it.</p>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
