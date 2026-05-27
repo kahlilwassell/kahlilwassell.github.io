@@ -122,6 +122,23 @@ img {
   background-image: url("./images/IMG_2308.jpeg");
 }
 
+.hero-media--suit {
+  background-image: url("./images/IMG3541.JPG");
+  background-position: top center;
+}
+
+.hero-media--explore {
+  background-image: url("./images/IMG3253.JPG");
+}
+
+.cern-photo {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  margin-top: 24px;
+}
+
 .cta-row {
   margin-top: 26px;
   display: flex;
